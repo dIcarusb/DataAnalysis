@@ -1,0 +1,12 @@
+Buscador de temas
+
+
+-Bloque de extracción de datos:
+	Se extraen datos de pubmed u/y otros servidores de papers; de abstracts y títulos principalmente de los mismos(papers). Y se guardan en una variable a tratar.
+
+-Bloque Tratamiento/procesamiento de texto:
+	Se proces la información de la variable anterior. Concretamente se buscan los tema/s y se extraen. Como no es etiquetado no se guarda el indice o el paper, solo se extrae el tema que contabiliza como 1 cada vez que aparece en un paper, luego se contabiliza las veces que aparece el tema a traves de los papers.
+	También se guardan los temas que aparecen junto al tema registrado(para hacer relación posterior entre ellos)
+
+-Bloque representación gráfica:
+	Se lee el diccionario de temas: el tema, su frecuencia global, temas con los que aparece. Se crea gráfico con esa información.
